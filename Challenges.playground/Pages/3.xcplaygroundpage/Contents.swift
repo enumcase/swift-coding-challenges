@@ -36,9 +36,9 @@ func challenge3(str1: String, str2: String) -> Bool {
     return true
 }
 
-assert(challenge3(str1: "abca", str2: "abca") == true, "Challenge 2 failed")
-assert(challenge3(str1: "abc", str2: "cba") == true, "Challenge 2 failed")
-assert(challenge3(str1: "a1 b2", str2: "b1 a2") == true, "Challenge 2 failed")
-assert(challenge3(str1: "abc", str2: "abca") == false, "Challenge 2 failed")
-assert(challenge3(str1: "abc", str2: "Abc") == false, "Challenge 2 failed")
-assert(challenge3(str1: "abc", str2: "cbAa") == false, "Challenge 2 failed")
+assert(challenge3(str1: "abca", str2: "abca") == true, "Challenge 3 failed")
+assert(challenge3(str1: "abc", str2: "cba") == true, "Challenge 3 failed")
+assert(challenge3(str1: "a1 b2", str2: "b1 a2") == true, "Challenge 3 failed")
+assert(challenge3(str1: "abc", str2: "abca") == false, "Challenge 3 failed")
+assert(challenge3(str1: "abc", str2: "Abc") == false, "Challenge 3 failed")
+assert(challenge3(str1: "abc", str2: "cbAa") == false, "Challenge 3 failed")
