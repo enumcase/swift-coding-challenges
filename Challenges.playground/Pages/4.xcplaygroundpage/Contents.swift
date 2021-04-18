@@ -18,7 +18,7 @@ import Foundation
 
 extension String {
     func fuzzyContains(_ string: String) -> Bool {
-        return self.range(of: string) != nil
+        return self.lowercased().range(of: string.lowercased()) != nil
     }
 }
 
