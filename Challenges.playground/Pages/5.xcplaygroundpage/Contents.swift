@@ -15,7 +15,7 @@
 
 import Foundation
 
-func challenge5(str: String, char: Character) -> Int{
+func challenge5(str: String, char: Character) -> Int {
     var count = 0
     
     for ch in str {
@@ -27,6 +27,17 @@ func challenge5(str: String, char: Character) -> Int{
     return count
 }
 
+func challenge5tricky(str: String, char: String) -> Int {
+    let strWithoutChar = str.replacingOccurrences(of: char, with: "")
+    // now strWithoutChar has all chars replaced with "" thus its length original str - char's count
+    
+    return str.count - strWithoutChar.count
+}
+
 assert(challenge5(str: "The rain in Spain", char: "a") == 2, "Challenge 5 failed")
 assert(challenge5(str: "Mississippi", char: "i") == 4, "Challenge 5 failed")
 assert(challenge5(str: "Hacking with Swift", char: "i") == 3, "Challenge 5 failed")
+
+assert(challenge5tricky(str: "The rain in Spain", char: "a") == 2, "Challenge 5 failed")
+assert(challenge5tricky(str: "Mississippi", char: "i") == 4, "Challenge 5 failed")
+assert(challenge5tricky(str: "Hacking with Swift", char: "i") == 3, "Challenge 5 failed")
