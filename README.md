@@ -1,2 +1,2 @@
 # Swift Coding Challenges.
-Solutions from Swift Coding Challenges book.
+Solutions for Swift Coding Challenges book.
