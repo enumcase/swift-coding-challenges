@@ -53,3 +53,7 @@ assert(challenge2(input: "rotator") == true, "Challenge 2 failed")
 assert(challenge2(input: "Rats live on no evil star") == true, "Challenge 2 failed")
 assert(challenge2(input: "Never odd or even") == false, "Challenge 2 failed")
 assert(challenge2(input: "Hello, world") == false, "Challenge 2 failed")
+
+// Note that this implementation works only for "perfect" cases, i.e. when there's no sentence like "Rats live on no evil star!".
+// In this case, you'd want to perform another logic.
+// Hint: check if the character you are looking at is indeed a letter
